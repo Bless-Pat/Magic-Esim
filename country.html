@@ -1,0 +1,74 @@
+<!--This was the first thing i attempted before i found out that to get optimum result, you have to use backend
+to automate it dynamically, so break a leg -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eSIM Details</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="country-name"></h1>
+      <div id="plans-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<script>
+  // Get country code from URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const countryCode = urlParams.get("country");
+
+  // Mock data for country details (can be replaced with an API)
+  const countriesData = {
+    GB: {
+      name: "United Kingdom",
+      plans: [
+        { data: "500 MB", price: "$0.55", duration: "3 days" },
+        { data: "10 GB", price: "$17.60", duration: "30 days" },
+        { data: "15 GB", price: "$19.80", duration: "30 days" },
+      ],
+    },
+    US: {
+      name: "United States",
+      plans: [
+        { data: "500 MB", price: "$0.60", duration: "3 days" },
+        { data: "10 GB", price: "$18.00", duration: "30 days" },
+        { data: "15 GB", price: "$20.00", duration: "30 days" },
+      ],
+    },
+  };
+
+  // Check if country exists and render data
+  if (countriesData[countryCode]) {
+    const country = countriesData[countryCode];
+    document.getElementById("country-name").innerText = `eSIM ${country.name}`;
+    const plansContainer = document.getElementById("plans-container");
+
+    country.plans.forEach((plan) => {
+      const planElement = document.createElement("div");
+      planElement.className = "plan-item";
+      planElement.innerHTML = `
+      <div class="d-flex justify-content-between p-3 shadow rounded">
+        <span>${plan.data}</span>
+        <span>${plan.price}</span>
+        <span>${plan.duration}</span>
+      </div>`;
+      plansContainer.appendChild(planElement);
+    });
+  } else {
+    document.getElementById("country-name").innerText = "Country not found.";
+  }
+</script>
+
+<script>
+  fetch(`https://api.example.com/countries/${countryCode}`)
+    .then((response) => response.json())
+    .then((data) => {
+      // Render country data dynamically
+    });
+</script>
