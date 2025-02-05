@@ -1,19 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html
+  lang="en"
+  class="layout-navbar-fixed layout-compact light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="/static/"
+  data-template="vertical-menu-template"
+  data-style="light"
+>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Country eSIM Plans</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Get eSIMs for International Travels - Magic eSIM</title>
+
+    <meta
+      name="csrf-token"
+      content="tl1tqx3lP9akreaqcNRxpbhe1dhwUuLxZTSWIuViuZ82QUfB6GH6kkGFpXJjCEfx"
+    />
+
+    <meta
+      name="description"
+      content="Get the best eSIM and VoIP solutions for international travels. Stay connected anywhere in the world with Magic eSIM."
+    />
+    <meta
+      name="keywords"
+      content="eSIM, VoIP, international travel, global connectivity, Magic eSIM"
+    />
+
+    <!-- Favicon -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="icon"
+      type="image/x-icon"
+      href="static/img/favicon/favicon.ico"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
 
-      <!-- Box Icons -->
-      <link
+    <!-- Icons -->
+    <link rel="stylesheet" href="static/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="static/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="static/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link
+      rel="stylesheet"
+      href="static/vendor/css/core.css"
+      class="template-customizer-core-css"
+    />
+    <link
+      rel="stylesheet"
+      href="static/vendor/css/theme-default.css"
+      class="template-customizer-theme-css"
+    />
+    <link rel="stylesheet" href="static/css/demo.css" />
+    <link rel="stylesheet" href="static/vendor/css/pages/front-page.css" />
+
+    <!-- Vendors CSS -->
+    <link
+      rel="stylesheet"
+      href="static/vendor/libs/nouislider/nouislider.css"
+    />
+    <link rel="stylesheet" href="static/vendor/libs/swiper/swiper.css" />
+    <link rel="stylesheet" href="static/vendor/libs/spinkit/spinkit.css" />
+
+    <!-- Page CSS -->
+    <link
+      rel="stylesheet"
+      href="static/vendor/css/pages/front-page-landing.css"
+    />
+
+    <!-- Box Icons -->
+    <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <!-- Helpers -->
+    <script src="static/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="static/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="static/js/front-config.js"></script>
+
+    <script src="static/vendor/js/dropdown-hover.js"></script>
+    <script src="static/vendor/js/mega-dropdown.js"></script>
+
     <style>
       body {
         display: flex;
@@ -42,172 +124,1561 @@
         border-radius: 5px;
         padding: 2px 6px;
       }
-      
     </style>
   </head>
+
   <body>
-    <div class="container mt-5">
-      <nav>
-        <a href="index.html">Home</a> &gt; <span>Country eSIM Plans</span>
-      </nav>
+    <!-- Navbar: Start -->
+    <nav class="layout-navbar shadow-none py-0">
+      <div class="navbar navbar-expand-lg landing-navbar px-3 px-md-8">
+        <!-- Menu logo wrapper: Start -->
+        <div class="navbar-brand app-brand demo d-flex py-0 me-4 me-xl-8">
+          <!-- Mobile menu toggle: Start-->
+          <button
+            class="navbar-toggler border-0 px-0 me-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i
+              class="tf-icons bx bx-menu align-middle text-heading fw-bold"
+            ></i>
+          </button>
+          <!-- Mobile menu toggle: End-->
+          <a href="/" class="app-brand-link">
+            <span class="app-brand-logo demo">
+              <img
+                src="static/img/logo.png"
+                alt="logo"
+                class="img-fluid"
+                width="160"
+                data-app-light-img="logo.png"
+                data-app-dark-img="logo-dark.png"
+              />
+            </span>
+          </a>
+        </div>
+        <!-- Menu logo wrapper: End -->
+        <!-- Menu wrapper: Start -->
+        <div
+          class="collapse navbar-collapse landing-nav-menu ps-5"
+          id="navbarSupportedContent"
+        >
+          <button
+            class="navbar-toggler border-0 text-heading position-absolute end-0 top-0 scaleX-n1-rtl p-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="tf-icons bx bx-x"></i>
+          </button>
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold"
+                aria-current="page"
+                href="#landingHero"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#landingESIM">eSIM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#landingVirtualNumbers"
+                >Virtual Numbers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#landingFAQ">FAQs</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link fw-bold" href="#landingContact">Contact Us</a>
+            </li> -->
+          </ul>
+        </div>
+        <div class="landing-menu-overlay d-lg-none"></div>
+        <!-- Menu wrapper: End -->
+        <!-- Toolbar: Start -->
+        <ul class="navbar-nav flex-row align-items-center ms-auto">
+          <!-- Style Switcher -->
+          <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-1">
+            <a
+              class="nav-link dropdown-toggle hide-arrow"
+              href="javascript:void(0);"
+              data-bs-toggle="dropdown"
+            >
+              <i class="bx"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="javascript:void(0);"
+                  data-theme="light"
+                >
+                  <span class="align-middle"
+                    ><i class="bx bx-sun me-3"></i>Light</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="javascript:void(0);"
+                  data-theme="dark"
+                >
+                  <span class="align-middle"
+                    ><i class="bx bx-moon me-3"></i>Dark</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="javascript:void(0);"
+                  data-theme="system"
+                >
+                  <span class="align-middle"
+                    ><i class="bx bx-desktop me-3"></i>System</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- / Style Switcher-->
 
-      <header class="my-4">
-        <h1>eSIM United States (USA)</h1>
-        <p>Best virtual SIM cards for travelers</p>
-      </header>
+          <!-- navbar button: Start -->
 
-      <section class="w-75 mx-auto">
-        <h2>Standard</h2>
-        <div class="plan-card">
-          <h5>500 MB</h5>
-          <p>$0.55 <span class="text-muted">($1.10 / GB)</span></p>
-          <p>3 days</p>
+          <li>
+            <a
+              href="/signup"
+              class="btn btn-primary me-3 rounded-pill d-none d-md-inline-block"
+              >Sign Up</a
+            >
+            <a href="/login" class="btn btn-light rounded-pill">
+              <span
+                class="tf-icons bx bx-log-in-circle scaleX-n1-rtl me-1"
+              ></span>
+              Login
+            </a>
+          </li>
+
+          <!-- navbar button: End -->
+        </ul>
+        <!-- Toolbar: End -->
+      </div>
+    </nav>
+    <!-- Navbar: End -->
+
+    <!-- Sections:Start -->
+    <div data-bs-spy="scroll" class="scrollspy-example">
+      <!-- Hero: Start -->
+      <section id="hero-animation">
+        <div id="landingHero" class="section-py landing-hero position-relative">
+          <img
+            src="static/img/front-pages/backgrounds/hero-bg.png"
+            alt="hero background"
+            class="position-absolute top-0 start-50 translate-middle-x object-fit-cover w-100 h-100"
+            data-speed="1"
+          />
+          <div class="container">
+            <div class="hero-text-box text-center position-relative">
+              <h1 class="text-primary hero-title display-6 fw-extrabold">
+                Stay connected globally with affordable rates
+              </h1>
+              <h2 class="hero-sub-title h6 mb-6">
+                Join millions of satisfied users who trust our eSIMs
+                <br class="d-none d-lg-block" />
+                For seamless global connectivity and affordable rates
+              </h2>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="input-group" style="max-width: 400px">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search..."
+                  aria-label="Search"
+                />
+                <span class="input-group-text">
+                  <i class="bx bx-md bx-search fs-4"></i>
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="plan-card">
-          <h5>10 GB</h5>
-          <p>$17.60 <span class="text-muted">($1.76 / GB)</span></p>
-          <p>30 days</p>
-        </div>
-        <div class="plan-card">
-          <h5>15 GB</h5>
-          <p>$19.80 <span class="text-muted">($1.32 / GB)</span></p>
-          <p>30 days</p>
-        </div>
-        <div class="plan-card">
-          <h5>20 GB</h5>
-          <p>$22 <span class="text-muted">($1.10 / GB)</span></p>
-          <p>30 days</p>
-        </div>
-        <div class="plan-card">
-          <h5>30 GB</h5>
-          <p>
-            $27.50 <span class="text-muted">($0.92 / GB)</span>
-            <span class="discount-badge">-17%</span>
+        <!-- <div class="landing-hero-blank"></div> -->
+      </section>
+      <!-- Hero: End -->
+
+
+<!--Country Data Starts-->
+<div class="container mt-5">
+  <nav>
+    <a href="index.html">Home</a> &gt; <span>Country eSIM Plans</span>
+  </nav>
+
+  <header class="my-4">
+    <h1>eSIM United States (USA)</h1>
+    <p>Best virtual SIM cards for travelers</p>
+  </header>
+
+  <section class="mx-auto w-100, w-md-75, w-lg-75">
+    <h2>Standard</h2>
+    <div class="plan-card">
+      <a href="#">
+      <h5>500 MB</h5>
+      <p>$0.55 <span class="text-muted">($1.10 / GB)</span></p>
+      <p>3 days</p>
+      </a>
+    </div>
+    <div class="plan-card">
+      <a href="#">
+      <h5>10 GB</h5>
+      <p>$17.60 <span class="text-muted">($1.76 / GB)</span></p>
+      <p>30 days</p>
+      </a>
+    </div>
+    <div class="plan-card">
+      <a href="#">
+      <h5>15 GB</h5>
+      <p>$19.80 <span class="text-muted">($1.32 / GB)</span></p>
+      <p>30 days</p>
+      </a>
+    </div>
+    <div class="plan-card">
+      <a href="#">
+      <h5>20 GB</h5>
+      <p>$22 <span class="text-muted">($1.10 / GB)</span></p>
+      <p>30 days</p>
+      </a>
+    </div>
+    <div class="plan-card">
+      <a href="#">
+      <h5>30 GB</h5>
+      <p>
+        $27.50 <span class="text-muted">($0.92 / GB)</span>
+        <span class="discount-badge">-17%</span>
+      </p>
+      <p>30 days</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="mt-4 mx-auto w-100, w-md-75, w-lg-75">
+    <h2>Unlimited Data</h2>
+    <div class="plan-card">
+      <a href="#">
+      <h5>1 day</h5>
+      <p>$7.70 <span class="text-muted">($7.70 / day)</span></p>
+      </a>
+    </div>
+    <div class="plan-card">
+      <a href="#">
+      <h5>7 days</h5>
+      <p>
+        $28.60 <span class="text-muted">($4.09 / day)</span>
+        <span class="discount-badge">-47%</span>
+      </p>
+      </a>
+    </div>
+    <div class="plan-card">
+      <a href="#">
+      <h5>15 days</h5>
+      <p>
+        $47.30 <span class="text-muted">($3.16 / day)</span>
+        <span class="discount-badge">-59%</span>
+      </p>
+      </a>
+    </div>
+    <div class="plan-card">
+      <a href="#">
+      <h5>30 days</h5>
+      <p>
+        $69.30 <span class="text-muted">($2.31 / day)</span>
+        <span class="discount-badge">-70%</span>
+      </p>
+      </a>
+    </div>
+  </section>
+
+
+
+
+
+
+<!--Country Data Ends-->
+
+
+
+      <!-- eSIM features: Start -->
+      <section id="landingEsimFeatures" class="section-py landing-esimfeatures">
+        <div class="container">
+          <div class="text-center mb-4">
+            <span class="badge bg-label-primary">Step-by-Step Guide</span>
+          </div>
+          <h4 class="text-center mb-1">
+            <span class="position-relative fw-extrabold z-1"
+              >How to Get Your eSIM
+              <img
+                src="static/img/front-pages/icons/section-title-icon.png"
+                alt="esim icon"
+                class="section-title-img position-absolute object-fit-contain bottom-0 z-n1"
+              />
+            </span>
+          </h4>
+          <p class="text-center mb-12">
+            Follow these simple steps to activate your eSIM and start enjoying
+            seamless connectivity.
           </p>
-          <p>30 days</p>
+          <div class="features-icon-wrapper row gx-0 gy-6 g-sm-12">
+            <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+              <div class="text-center mb-4">
+                <img src="static/img/front-pages/icons/user.svg" alt="signup" />
+              </div>
+              <h5 class="mb-2">Sign Up</h5>
+              <p class="features-icon-description">
+                Create an account on our platform to begin the eSIM activation
+                process.
+              </p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+              <div class="text-center mb-4">
+                <img
+                  src="static/img/front-pages/icons/paper.svg"
+                  alt="choose plan"
+                />
+              </div>
+              <h5 class="mb-2">Choose a Plan</h5>
+              <p class="features-icon-description">
+                Select the eSIM plan that best suits your data and connectivity
+                needs.
+              </p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+              <div class="text-center mb-4">
+                <img
+                  src="static/img/front-pages/icons/check.svg"
+                  alt="verify identity"
+                />
+              </div>
+              <h5 class="mb-2">Verify Your Identity</h5>
+              <p class="features-icon-description">
+                Complete the verification process to ensure secure activation of
+                your eSIM.
+              </p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+              <div class="text-center mb-4">
+                <img
+                  src="static/img/front-pages/icons/rocket.svg"
+                  alt="activate esim"
+                />
+              </div>
+              <h5 class="mb-2">Activate Your eSIM</h5>
+              <p class="features-icon-description">
+                Receive your eSIM QR code and activate it on your device
+                instantly.
+              </p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+              <div class="text-center mb-4">
+                <img
+                  src="static/img/front-pages/icons/laptop.svg"
+                  alt="setup complete"
+                />
+              </div>
+              <h5 class="mb-2">Start Using Your eSIM</h5>
+              <p class="features-icon-description">
+                Enjoy seamless connectivity and explore new possibilities with
+                your eSIM.
+              </p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+              <div class="text-center mb-4">
+                <img
+                  src="static/img/front-pages/icons/user.svg"
+                  alt="support"
+                />
+              </div>
+              <h5 class="mb-2">Need Help?</h5>
+              <p class="features-icon-description">
+                Contact our support team anytime for assistance with your eSIM
+                setup.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="mt-4 mx-auto w-75">
-        <h2>Unlimited Data</h2>
-        <div class="plan-card">
-          <h5>1 day</h5>
-          <p>$7.70 <span class="text-muted">($7.70 / day)</span></p>
-        </div>
-        <div class="plan-card">
-          <h5>7 days</h5>
-          <p>
-            $28.60 <span class="text-muted">($4.09 / day)</span>
-            <span class="discount-badge">-47%</span>
-          </p>
-        </div>
-        <div class="plan-card">
-          <h5>15 days</h5>
-          <p>
-            $47.30 <span class="text-muted">($3.16 / day)</span>
-            <span class="discount-badge">-59%</span>
-          </p>
-        </div>
-        <div class="plan-card">
-          <h5>30 days</h5>
-          <p>
-            $69.30 <span class="text-muted">($2.31 / day)</span>
-            <span class="discount-badge">-70%</span>
-          </p>
-        </div>
-      </section>
+      <!-- eSIM features: End -->
 
-
-      <section class="bg-light mx-auto w-75 p-3 mb-5 rounded-5">
-        <div class="container my-5">
-          <h2 class="text-center mb-4">Internet connection you can rely on</h2>
-          <div class="row">
-            <!-- Feature 1 -->
-            <div class="col-12 col-md-6 col-lg-6 mb-4">
-              <div class="p-3 bg-white rounded-3 shadow-sm text-center">
-                <i class="bx bx-md bx-search fs-4"></i>
-                <h6 class="fw-bold">24/7 Support</h6>
-                <p class="mb-0">Average response time – just 6 minutes. Always available</p>
-              </div>
-            </div>
-            <!-- Feature 2 -->
-            <div class="col-12 col-md-6 col-lg-6 mb-4">
-              <div class="p-3 bg-white rounded-3 shadow-sm text-center">
-                <i class="bx bx-md bx-search fs-4"></i>
-                <h6 class="fw-bold">100% money-back guarantee</h6>
-                <p class="mb-0">If you’re not satisfied with the service, we’ll refund you </p>
-              </div>
-            </div>
-            <!-- Feature 3 -->
-            <div class="col-12 col-md-6 col-lg-6 mb-4">
-              <div class="p-3 bg-white rounded-3 shadow-sm text-center">
-                <i class="bx bx-md bx-search fs-4"></i>
-                <h6 class="fw-bold">Switchless Networks</h6>
-                <p class="mb-0">If another mobile operator has 5G, we’ll switch you to it right away</p>
-              </div>
-            </div>
-            <!-- Feature 4 -->
-            <div class="col-12 col-md-6 col-lg-6 mb-4">
-              <div class="p-3 bg-white rounded-3 shadow-sm text-center">
-                <i class="bx bx-md bx-search fs-4"></i>
-                <h6 class="fw-bold">Free VPN</h6>
-                <p class="mb-0">Access your favorite services no matter where you are </p>
+      <!-- virtual numbers: Start -->
+      <section
+        id="landingVirtualNumbers"
+        class="section-py bg-body landing-virtualnumbers pb-0"
+      >
+        <div class="container pb-5">
+          <div class="text-center mb-2">
+            <span class="badge bg-label-primary">Magic Virtual Numbers</span>
+          </div>
+          <h4 class="text-center mb-4">
+            <span class="position-relative fw-extrabold z-1">
+              Become anonymous online,
+              <img
+                src="static/img/front-pages/icons/section-title-icon.png"
+                alt="laptop charging"
+                class="section-title-img position-absolute object-fit-contain bottom-0 z-n1"
+              />
+            </span>
+            get your virtual phone number
+          </h4>
+          <div class="nav-align-top mb-5">
+            <div class="tab-content">
+              <div
+                class="tab-pane fade show active"
+                id="navs-pills-justified-services"
+                role="tabpanel"
+              >
+                <div class="row justify-content-center">
+                  <form id="virtualNumberRequestForm" class="col-12 col-md-6">
+                    <div class="row g-4">
+                      <div class="col-md-6">
+                        <label class="form-label" for="full_name"
+                          >Full Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="full_name"
+                          placeholder="First & Last name"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="email">Email</label>
+                        <input
+                          type="email"
+                          name="email"
+                          class="form-control"
+                          required
+                          placeholder="name@domain.com"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label" for="nationality"
+                          >Nationality:</label
+                        >
+                        <input
+                          type="text"
+                          name="nationality"
+                          class="form-control"
+                          placeholder="Kenyan"
+                          required
+                        />
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label" for="purpose"
+                          >Purpose/Service:</label
+                        >
+                        <textarea
+                          name="purpose"
+                          class="form-control"
+                          rows="3"
+                          required
+                          placeholder="Write your purpose/service for the virtual number here"
+                        ></textarea>
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label" for="service_country"
+                          >Service Country</label
+                        >
+                        <input
+                          type="text"
+                          name="service_country"
+                          class="form-control"
+                          placeholder="United Kingdom"
+                          required
+                        />
+                      </div>
+                      <div class="col-12">
+                        <button
+                          id="submitBtn1"
+                          type="submit"
+                          class="btn btn-primary"
+                        >
+                          Send Request
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-  
+      <!-- virtual numbers: End -->
 
-
-
-
-
-      <!-- Sticky Footer -->
-  <footer class="sticky-footer p-3 text-center">
-    <button type="button" class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#checkoutModal">
-      Proceed to Checkout
-    </button>
-  </footer>
-    
-
-   <!-- Modal -->
-   <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="checkoutModalLabel">Checkout Details</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <h6>Order Summary:</h6>
-          <ul>
-            <li>Product: Awesome Item</li>
-            <li>Price: $50</li>
-            <li>Quantity: 1</li>
-            <li>Total: $50</li>
-          </ul>
-          <form>
-            <div class="mb-3">
-              <label for="paymentMethod" class="form-label">Payment Method</label>
-              <select id="paymentMethod" class="form-select">
-                <option value="creditCard">Credit Card</option>
-                <option value="paypal">PayPal</option>
-                <option value="bankTransfer">Bank Transfer</option>
-              </select>
+      <!-- virtual numbers features: Start -->
+      <section
+        id="landingNumberFeatures"
+        class="section-py landing-numberfeatures"
+      >
+        <div class="container">
+          <div class="text-center mb-4">
+            <span class="badge bg-label-primary">Step-by-Step Guide</span>
+          </div>
+          <h4 class="text-center mb-1">
+            <span class="position-relative fw-extrabold z-1"
+              >How to Get Your Virtual Number
+              <img
+                src="static/img/front-pages/icons/section-title-icon.png"
+                alt="virtual number icon"
+                class="section-title-img position-absolute object-fit-contain bottom-0 z-n1"
+              />
+            </span>
+          </h4>
+          <p class="text-center mb-12">
+            Follow these simple steps to set up your virtual number and start
+            making calls globally.
+          </p>
+          <div class="features-icon-wrapper row gx-0 gy-6 g-sm-12">
+            <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+              <div class="text-center mb-4">
+                <img src="static/img/front-pages/icons/user.svg" alt="signup" />
+              </div>
+              <h5 class="mb-2">Sign Up</h5>
+              <p class="features-icon-description">
+                Create an account on our platform to start your virtual number
+                setup process.
+              </p>
             </div>
-            <button type="submit" class="btn btn-success w-100">Pay Now</button>
-          </form>
+            <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+              <div class="text-center mb-4">
+                <img
+                  src="static/img/front-pages/icons/paper.svg"
+                  alt="choose number"
+                />
+              </div>
+              <h5 class="mb-2">Choose Your Number</h5>
+              <p class="features-icon-description">
+                Select a virtual number from our wide range of available
+                countries and regions.
+              </p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+              <div class="text-center mb-4">
+                <img
+                  src="static/img/front-pages/icons/check.svg"
+                  alt="verify identity"
+                />
+              </div>
+              <h5 class="mb-2">Verify Your Identity</h5>
+              <p class="features-icon-description">
+                Complete the verification process for secure activation of your
+                virtual number.
+              </p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+              <div class="text-center mb-4">
+                <img
+                  src="static/img/front-pages/icons/rocket.svg"
+                  alt="activate number"
+                />
+              </div>
+              <h5 class="mb-2">Activate Your Virtual Number</h5>
+              <p class="features-icon-description">
+                Activate your virtual number instantly and configure it for
+                calls or messaging.
+              </p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+              <div class="text-center mb-4">
+                <img
+                  src="static/img/front-pages/icons/laptop.svg"
+                  alt="start using"
+                />
+              </div>
+              <h5 class="mb-2">Start Using Your Virtual Number</h5>
+              <p class="features-icon-description">
+                Make and receive calls or messages globally with your virtual
+                number.
+              </p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+              <div class="text-center mb-4">
+                <img
+                  src="static/img/front-pages/icons/user.svg"
+                  alt="support"
+                />
+              </div>
+              <h5 class="mb-2">Need Help?</h5>
+              <p class="features-icon-description">
+                Our support team is here to help you with any issues or
+                questions you have.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      </section>
+      <!-- virtual numbers features: End -->
+
+      <!-- Real customers reviews: Start -->
+      <section
+        id="landingReviews"
+        class="section-py bg-body landing-reviews pb-0"
+      >
+        <!-- What people say slider: Start -->
+        <div class="container">
+          <div class="row align-items-center gx-0 gy-4 g-lg-5 mb-5 pb-md-5">
+            <div class="col-md-6 col-lg-5 col-xl-3">
+              <div class="mb-4">
+                <span class="badge bg-label-primary"
+                  >Real Customers Reviews</span
+                >
+              </div>
+              <h4 class="mb-1">
+                <span class="position-relative fw-extrabold z-1"
+                  >What people love
+                  <img
+                    src="static/img/front-pages/icons/section-title-icon.png"
+                    alt="customer reviews icon"
+                    class="section-title-img position-absolute object-fit-contain bottom-0 z-n1"
+                  />
+                </span>
+              </h4>
+              <p class="mb-5 mb-md-12">
+                Hear from real customers about how our eSIM and Virtual Number
+                services are transforming their lives.
+              </p>
+              <div class="landing-reviews-btns">
+                <button
+                  id="reviews-previous-btn"
+                  class="btn btn-icon btn-label-primary reviews-btn me-3"
+                  type="button"
+                >
+                  <i class="bx bx-chevron-left bx-md"></i>
+                </button>
+                <button
+                  id="reviews-next-btn"
+                  class="btn btn-icon btn-label-primary reviews-btn"
+                  type="button"
+                >
+                  <i class="bx bx-chevron-right bx-md"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-7 col-xl-9">
+              <div class="swiper-reviews-carousel overflow-hidden">
+                <div class="swiper" id="swiper-reviews">
+                  <div class="swiper-wrapper">
+                    <!-- Review 1 -->
+                    <div class="swiper-slide">
+                      <div class="card h-100">
+                        <div
+                          class="card-body text-body d-flex flex-column justify-content-between h-100"
+                        >
+                          <p>
+                            “Magic eSIM has revolutionized how I stay connected
+                            while traveling. No more waiting in line for SIM
+                            cards at airports!”
+                          </p>
+                          <div class="text-warning mb-4">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="avatar me-3 avatar-sm">
+                              <img
+                                src="static/img/avatars/1.png"
+                                alt="Avatar"
+                                class="rounded-circle"
+                              />
+                            </div>
+                            <div>
+                              <h6 class="mb-0">Sophia Carter</h6>
+                              <p class="small text-muted mb-0">Digital Nomad</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="swiper-slide">
+                      <div class="card h-100">
+                        <div
+                          class="card-body text-body d-flex flex-column justify-content-between h-100"
+                        >
+                          <p>
+                            “The virtual number service is a game-changer for my
+                            business. I can now manage multiple customer regions
+                            effortlessly.”
+                          </p>
+                          <div class="text-warning mb-4">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="avatar me-3 avatar-sm">
+                              <img
+                                src="static/img/avatars/7.png"
+                                alt="Avatar"
+                                class="rounded-circle"
+                              />
+                            </div>
+                            <div>
+                              <h6 class="mb-0">James Roberts</h6>
+                              <p class="small text-muted mb-0">Entrepreneur</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="swiper-slide">
+                      <div class="card h-100">
+                        <div
+                          class="card-body text-body d-flex flex-column justify-content-between h-100"
+                        >
+                          <p>
+                            “Setting up my eSIM was incredibly fast and easy
+                            with Magic eSIM. I was connected in minutes and
+                            loved the smooth experience.”
+                          </p>
+                          <div class="text-warning mb-4">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="avatar me-3 avatar-sm">
+                              <img
+                                src="static/img/avatars/5.png"
+                                alt="Avatar"
+                                class="rounded-circle"
+                              />
+                            </div>
+                            <div>
+                              <h6 class="mb-0">Linda Wong</h6>
+                              <p class="small text-muted mb-0">
+                                Frequent Traveler
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="swiper-slide">
+                      <div class="card h-100">
+                        <div
+                          class="card-body text-body d-flex flex-column justify-content-between h-100"
+                        >
+                          <p>
+                            “Thanks to Magic eSIM, I no longer have to worry
+                            about roaming charges. The plans are affordable and
+                            reliable.”
+                          </p>
+                          <div class="text-warning mb-4">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="avatar me-3 avatar-sm">
+                              <img
+                                src="static/img/avatars/6.png"
+                                alt="Avatar"
+                                class="rounded-circle"
+                              />
+                            </div>
+                            <div>
+                              <h6 class="mb-0">Michael Brown</h6>
+                              <p class="small text-muted mb-0">
+                                Tech Enthusiast
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Review 5 -->
+                    <div class="swiper-slide">
+                      <div class="card h-100">
+                        <div
+                          class="card-body text-body d-flex flex-column justify-content-between h-100"
+                        >
+                          <p>
+                            “Magic eSIM's virtual number has helped me stay
+                            connected with clients worldwide without additional
+                            infrastructure.”
+                          </p>
+                          <div class="text-warning mb-4">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="avatar me-3 avatar-sm">
+                              <img
+                                src="static/img/avatars/5.png"
+                                alt="Avatar"
+                                class="rounded-circle"
+                              />
+                            </div>
+                            <div>
+                              <h6 class="mb-0">Emma Johnson</h6>
+                              <p class="small text-muted mb-0">Freelancer</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- What people say slider: End -->
+        <hr class="m-0 mt-6 mt-md-12" />
+        <!-- Logo slider: Start -->
+        <div class="container">
+          <div class="swiper-logo-carousel pt-8">
+            <div class="swiper" id="swiper-clients-logos">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="static/img/front-pages/branding/logo_1-light.png"
+                    alt="client logo"
+                    class="client-logo"
+                    data-app-light-img="front-pages/branding/logo_1-light.png"
+                    data-app-dark-img="front-pages/branding/logo_1-dark.png"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="static/img/front-pages/branding/logo_2-light.png"
+                    alt="client logo"
+                    class="client-logo"
+                    data-app-light-img="front-pages/branding/logo_2-light.png"
+                    data-app-dark-img="front-pages/branding/logo_2-dark.png"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="static/img/front-pages/branding/logo_3-light.png"
+                    alt="client logo"
+                    class="client-logo"
+                    data-app-light-img="front-pages/branding/logo_3-light.png"
+                    data-app-dark-img="front-pages/branding/logo_3-dark.png"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="static/img/front-pages/branding/logo_4-light.png"
+                    alt="client logo"
+                    class="client-logo"
+                    data-app-light-img="front-pages/branding/logo_4-light.png"
+                    data-app-dark-img="front-pages/branding/logo_4-dark.png"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="static/img/front-pages/branding/logo_5-light.png"
+                    alt="client logo"
+                    class="client-logo"
+                    data-app-light-img="front-pages/branding/logo_5-light.png"
+                    data-app-dark-img="front-pages/branding/logo_5-dark.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Logo slider: End -->
+      </section>
+      <!-- Real customers reviews: End -->
+
+      <!-- Fun facts: Start -->
+      <section id="landingFunFacts" class="section-py landing-fun-facts">
+        <div class="container">
+          <div class="row gy-6">
+            <div class="col-sm-6 col-lg-3">
+              <div class="card border border-primary shadow-none">
+                <div class="card-body text-center">
+                  <img
+                    src="static/img/front-pages/icons/laptop.svg"
+                    alt="active users"
+                    class="mb-4"
+                  />
+                  <h3 class="mb-0">15k+</h3>
+                  <p class="fw-bold mb-0">
+                    Active Users<br />
+                    Worldwide
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="card border border-success shadow-none">
+                <div class="card-body text-center">
+                  <img
+                    src="static/img/front-pages/icons/user-success.svg"
+                    alt="connected devices"
+                    class="mb-4"
+                  />
+                  <h3 class="mb-0">30k+</h3>
+                  <p class="fw-bold mb-0">
+                    Devices Connected<br />
+                    with eSIM
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="card border border-info shadow-none">
+                <div class="card-body text-center">
+                  <img
+                    src="static/img/front-pages/icons/diamond-info.svg"
+                    alt="customer satisfaction"
+                    class="mb-4"
+                  />
+                  <h3 class="mb-0">4.9/5</h3>
+                  <p class="fw-bold mb-0">
+                    Customer<br />
+                    Satisfaction
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="card border border-warning shadow-none">
+                <div class="card-body text-center">
+                  <img
+                    src="static/img/front-pages/icons/check-warning.svg"
+                    alt="countries supported"
+                    class="mb-4"
+                  />
+                  <h3 class="mb-0">200+</h3>
+                  <p class="fw-bold mb-0">
+                    Countries<br />
+                    Supported
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fun facts: End -->
+
+      <!-- CTA: Start -->
+      <section
+        id="landingCTA"
+        class="section-py landing-cta position-relative p-lg-0 pb-0"
+      >
+        <img
+          src="static/img/front-pages/backgrounds/cta-bg-light.png"
+          class="position-absolute bottom-0 end-0 scaleX-n1-rtl h-100 w-100 z-n1"
+          alt="cta background"
+          data-app-light-img="front-pages/backgrounds/cta-bg-light.png"
+          data-app-dark-img="front-pages/backgrounds/cta-bg-dark.png"
+        />
+        <div class="container">
+          <div class="row align-items-center gy-12">
+            <div class="col-lg-7 text-start text-sm-center text-lg-start">
+              <h3 class="cta-title text-primary fw-bold mb-1">
+                Ready to try eSIMs and change the way you stay connected?
+              </h3>
+              <h5 class="text-body mb-8">
+                Download the Magic eSIM app to purchase, manage, and top up your
+                eSIMs anytime, anywhere!
+              </h5>
+              <div
+                class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3"
+              >
+                <a href="javascript:;">
+                  <img
+                    src="static/img/front-pages/landing-page/apple-icon.png"
+                    alt="Download on the App Store"
+                    height="50px"
+                  />
+                </a>
+                <a href="javascript:;">
+                  <img
+                    src="static/img/front-pages/landing-page/google-play-icon.png"
+                    alt="Get it on Google Play"
+                    height="50px"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5 pt-lg-12 text-center text-lg-end">
+              <img
+                src="static/img/front-pages/landing-page/cta-dashboard.png"
+                alt="cta dashboard"
+                class="img-fluid mt-lg-4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA: End -->
+
+      <!-- FAQ: Start -->
+      <section id="landingFAQ" class="section-py bg-body landing-faq">
+        <div class="container">
+          <div class="text-center mb-4">
+            <span class="badge bg-label-primary">FAQ</span>
+          </div>
+          <h4 class="text-center mb-1">
+            Frequently asked
+            <span class="position-relative fw-extrabold z-1"
+              >questions
+              <img
+                src="static/img/front-pages/icons/section-title-icon.png"
+                alt="faq icon"
+                class="section-title-img position-absolute object-fit-contain bottom-0 z-n1"
+              />
+            </span>
+          </h4>
+          <p class="text-center mb-12 pb-md-4">
+            Find answers to common questions about Magic eSIM and Virtual Number
+            services.
+          </p>
+          <div class="row gy-12 align-items-center">
+            <div class="col-lg-5">
+              <div class="text-center">
+                <img
+                  src="static/img/front-pages/landing-page/faq-boy-with-logos.png"
+                  alt="faq graphic"
+                  class="faq-image"
+                />
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="accordion" id="accordionExample">
+                <div class="card accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      type="button"
+                      class="accordion-button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordionOne"
+                      aria-expanded="true"
+                      aria-controls="accordionOne"
+                    >
+                      How do I activate my eSIM?
+                    </button>
+                  </h2>
+                  <div
+                    id="accordionOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Activating your eSIM is simple! Once you purchase an eSIM
+                      plan, you'll receive a QR code. Scan the QR code with your
+                      device's eSIM settings, and your eSIM will be activated
+                      instantly.
+                    </div>
+                  </div>
+                </div>
+                <div class="card accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordionTwo"
+                      aria-expanded="false"
+                      aria-controls="accordionTwo"
+                    >
+                      Can I use a virtual number for business purposes?
+                    </button>
+                  </h2>
+                  <div
+                    id="accordionTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Yes, our virtual numbers are ideal for businesses! You can
+                      use them to manage customer calls, streamline
+                      communications, and even integrate them into your business
+                      tools for messaging and support.
+                    </div>
+                  </div>
+                </div>
+                <div class="card accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordionThree"
+                      aria-expanded="false"
+                      aria-controls="accordionThree"
+                    >
+                      Is Magic eSIM compatible with my device?
+                    </button>
+                  </h2>
+                  <div
+                    id="accordionThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Magic eSIM is compatible with most modern devices that
+                      support eSIM technology. Please check your device's
+                      specifications or contact our support team for assistance.
+                    </div>
+                  </div>
+                </div>
+                <div class="card accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordionFour"
+                      aria-expanded="false"
+                      aria-controls="accordionFour"
+                    >
+                      How many countries are supported?
+                    </button>
+                  </h2>
+                  <div
+                    id="accordionFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Magic eSIM and Virtual Number services are available in
+                      over 200 countries, making it easy to stay connected
+                      wherever you are.
+                    </div>
+                  </div>
+                </div>
+                <div class="card accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordionFive"
+                      aria-expanded="false"
+                      aria-controls="accordionFive"
+                    >
+                      What are the benefits of a virtual number?
+                    </button>
+                  </h2>
+                  <div
+                    id="accordionFive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      A virtual number allows you to have a phone number from
+                      any country without needing a physical SIM. It’s perfect
+                      for international businesses, remote workers, and
+                      individuals who need flexible communication.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ: End -->
+
+      <!-- Contact Us: Start -->
+      <!-- <section id="landingContact" class="section-py bg-body landing-contact">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="badge bg-label-primary">Contact Us</span>
+        </div>
+        <h4 class="text-center mb-1">
+          <span class="position-relative fw-extrabold z-1">Get in Touch
+            <img src="/static/img/front-pages/icons/section-title-icon.png" alt="contact icon"
+              class="section-title-img position-absolute object-fit-contain bottom-0 z-n1">
+          </span>
+        </h4>
+        <p class="text-center mb-12 pb-md-4">Have questions about Magic eSIM or Virtual Numbers? We’re here to help.</p>
+        <div class="row g-6">
+          <div class="col-lg-5">
+            <div class="contact-img-box position-relative border p-2 h-100">
+              <img src="/static/img/front-pages/icons/contact-border.png" alt="contact border"
+                class="contact-border-img position-absolute d-none d-lg-block scaleX-n1-rtl" />
+              <img src="/static/img/front-pages/landing-page/contact-customer-service.png"
+                alt="contact customer service" class="contact-img w-100 scaleX-n1-rtl" />
+              <div class="p-4 pb-2">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-12 col-xl-6">
+                    <div class="d-flex align-items-center">
+                      <div class="badge bg-label-primary rounded p-1_5 me-3"><i class="bx bx-envelope"></i></div>
+                      <div>
+                        <p class="mb-0">Email</p>
+                        <h6 class="mb-0"><a href="mailto:support@esimmagic.com"
+                            class="text-heading">support@esimmagic.com</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-12 col-xl-6">
+                    <div class="d-flex align-items-center">
+                      <div class="badge bg-label-success rounded p-1_5 me-3"><i class="bx bx-phone-call"></i></div>
+                      <div>
+                        <p class="mb-0">Phone</p>
+                        <h6 class="mb-0"><a href="tel:+18001234567" class="text-heading">+1 800 123 4567</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="mb-2">Send a Message</h4>
+                <p class="mb-6">
+                  Reach out for assistance with payments, accounts, licensing, partnerships, or any other inquiries.
+                  We're happy to help!
+                </p>
+                <form>
+                  <div class="row g-4">
+                    <div class="col-md-6">
+                      <label class="form-label" for="contact-form-fullname">Full Name</label>
+                      <input type="text" class="form-control" id="contact-form-fullname" placeholder="John Doe" />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="contact-form-email">Email</label>
+                      <input type="email" id="contact-form-email" class="form-control"
+                        placeholder="johndoe@example.com" />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="contact-form-message">Message</label>
+                      <textarea id="contact-form-message" class="form-control" rows="11"
+                        placeholder="Write your message here"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+      <!-- Contact Us: End -->
+
+ <!-- Sticky Footer -->
+ <footer class="sticky-footer p-3 text-center">
+  <button type="button" class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#planDetailsModal">
+    Proceed to Checkout
+  </button>
+</footer>
+
+
+      <!-- Plan details Modal -->
+      <div
+        class="modal modal-lg fade"
+        id="planDetailsModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="planDetailsModalLabel"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5
+                class="modal-title text-dark fw-bold"
+                id="planDetailsModalLabel"
+              >
+                Plan Details
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form id="planDetailsForm">
+                <input type="hidden" name="user" value="None" />
+                <input type="hidden" name="price" />
+                <input type="hidden" name="currency" />
+                <input type="hidden" name="package_code" />
+                <input type="hidden" name="seller" />
+                <div class="row g-5">
+                  <div class="col-12" id="esim_plan_details">
+                    <div
+                      class="card shadow flex-md-row align-items-center border-primary border-1"
+                    >
+                      <div class="col-12 col-md-6 text-center pt-md-0 pt-5">
+                        <img
+                          src="https://flagcdn.com/w320/gb.png"
+                          class="img-fluid rounded-4"
+                        />
+                      </div>
+                      <div class="card-body col-12 col-md-6">
+                        <ul class="list-unstyled text-start mb-4">
+                          <li
+                            class="d-flex flex-row justify-content-between fw-bold py-4"
+                          >
+                            <strong>Coverage:</strong>
+                            <span>United Kingdom</span>
+                          </li>
+                          <li
+                            class="d-flex flex-row justify-content-between fw-bold py-4 border-top"
+                          >
+                            <strong>Data:</strong> <span>500 MB</span>
+                          </li>
+                          <li
+                            class="d-flex flex-row justify-content-between fw-bold py-4 border-top"
+                          >
+                            <strong>Validity:</strong> <span>1 Day</span>
+                          </li>
+                          <li
+                            class="d-flex flex-row justify-content-between fw-bold py-4 border-top"
+                          >
+                            <strong>Price:</strong>
+                            <span class="fs-5 text-primary">$3.40 USD</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-12 g-5 d-flex flex-column flex-md-row"
+                    id="esim_plan_other_details"
+                  >
+                    <div class="col-12 col-md-6 p-5">
+                      <h5 class="m-0 text-primary fw-bold">
+                        Supported Countries
+                      </h5>
+                      <div
+                        class="text-center overflow-auto"
+                        style="max-height: 350px"
+                      >
+                        <ul
+                          class="list-unstyled text-start mb-0"
+                          id="vertical-scroll_bar"
+                        >
+                          <li
+                            class="py-2 border-bottom d-flex align-items-center justify-content-between"
+                          >
+                            <p class="mb-0">United Kingdom</p>
+                            <img
+                              src="https://flagcdn.com/w320/gb.png"
+                              class="rounded"
+                              height="30px"
+                            />
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 card bg-lighter">
+                      <div class="card-header pb-2 text-dark fw-bolder">
+                        <h5 class="m-0 text-primary fw-bold">
+                          Additional Information
+                        </h5>
+                      </div>
+                      <div class="card-body text-center">
+                        <ul class="list-unstyled text-start mb-0">
+                          <li class="py-2 d-flex align-items-center text-dark">
+                            <i class="bx bx-broadcast me-3"></i>
+                            <div>
+                              <p class="mb-0">Network(s):</p>
+                              <span class="fw-bold">United Kingdom</span>
+                            </div>
+                          </li>
+                          <li class="py-2 d-flex align-items-center text-dark">
+                            <i class="bx bx-message-alt-detail me-3"></i>
+                            <div>
+                              <p class="mb-0">Plan Type:</p>
+                              <span class="fw-bold">United Kingdom</span>
+                            </div>
+                          </li>
+                          <li class="py-2 d-flex align-items-center text-dark">
+                            <i class="bx bx-list-check me-3"></i>
+                            <div>
+                              <p class="mb-0">Validity Policy:</p>
+                              <span class="fw-bold"
+                                >The validity period starts when the eSIM
+                                connects to a mobile network in its coverage
+                                area. If you install the eSIM outside of the
+                                coverage area, you can connect to a network when
+                                you arrive.</span
+                              >
+                            </div>
+                          </li>
+                          <li class="py-2 d-flex align-items-center text-dark">
+                            <i class="bx bxs-layer-plus me-3"></i>
+                            <div>
+                              <p class="mb-0">Top-Up Option</p>
+                              <span class="fw-bold">Available</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 mt-0 py-8" id="payment_method_card">
+                    <h5>Choose Payment Gateway:</h5>
+                    <div class="row g-5">
+                      <div class="col-md col-lg-12 col-xl-6">
+                        <div
+                          class="form-check custom-option custom-option-basic checked"
+                        >
+                          <label
+                            class="form-check-label custom-option-content form-check-input-payment d-flex gap-4 align-items-center"
+                            for="CoinPayments"
+                          >
+                            <input
+                              name="payment_gateway"
+                              class="form-check-input"
+                              type="radio"
+                              value="CoinPayments"
+                              id="CoinPayments"
+                              checked=""
+                            />
+                            <span class="custom-option-body">
+                              <img
+                                src="https://www.coinpayments.net/images/pub/buynow-grey.png"
+                                alt="Buy Now with CoinPayments.net"
+                                height="40"
+                              />
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md col-lg-12 col-xl-6">
+                        <div
+                          class="form-check custom-option custom-option-basic"
+                        >
+                          <label
+                            class="form-check-label custom-option-content form-check-input-payment d-flex gap-4 align-items-center"
+                            for="Stripe"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                          >
+                            <input
+                              name="payment_gateway"
+                              class="form-check-input"
+                              type="radio"
+                              value="Stripe"
+                              id="Stripe"
+                              disabled=""
+                            />
+                            <span class="custom-option-body">
+                              <img
+                                src="static/img/icons/brands/stripe.png"
+                                alt="Buy Now with Stripe"
+                                height="40"
+                              />
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <a href="/login" class="btn btn-success mt-3 w-100 btn-lg"
+                      >Login to Checkout</a
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    <!-- / Sections:End -->
 
+    <div
+      id="responseToast"
+      class="position-fixed end-0 m-3 top-0 bs-toast toast"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="toast-header">
+        <i class="bx bx-bell me-2"></i>
+        <div class="me-auto fw-semibold">Alert</div>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="toast-body">---</div>
+    </div>
 
-    <section class="mt-auto w-75"></section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="static/vendor/libs/jquery/jquery.js"></script>
+    <script src="static/vendor/libs/popper/popper.js"></script>
+    <script src="static/vendor/js/bootstrap.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="static/vendor/libs/nouislider/nouislider.js"></script>
+    <script src="static/vendor/libs/swiper/swiper.js"></script>
+    <script src="static/vendor/libs/block-ui/block-ui.js"></script>
+
+    <!-- Main JS -->
+    <script src="static/js/front-main.js"></script>
+
+    <!-- Page JS -->
+    <script src="static/js/front-page-landing.js"></script>
+    <script src="static/backend/app.js"></script>
+    <script src="static/backend/functions.js"></script>
+    <script src="static/backend/numbers.js"></script>
   </body>
 </html>
+
+<!-- beautify ignore:end -->
